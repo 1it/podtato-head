@@ -9,6 +9,7 @@ app "podtato-head-server" {
   build {
     use "docker" {
       buildkit    = false
+      disable_entrypoint = true
       dockerfile = "./docker/DockerfileV0.1.2"
     }
     registry {
